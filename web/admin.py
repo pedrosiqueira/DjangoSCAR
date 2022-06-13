@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from web.models import Acesso, Permissao, Porta, Usuario
+
+admin.site.register(Usuario)
+admin.site.register(Porta)
+admin.site.register(Permissao)
+admin.site.register(Acesso)
