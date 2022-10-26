@@ -108,7 +108,7 @@ def apagarDigital(index):
         return True
     try:
         f = iniciarConexao()
-        if(f.deleteTemplate(index)):
+        if f.deleteTemplate(index):
             return True
     except Exception as e:
         print('Erro: ' + str(e))
