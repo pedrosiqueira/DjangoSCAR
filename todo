@@ -1,8 +1,0 @@
-# todo list
-- na função baixar digital, passar um index como parâmetro, de valor padrão -1. se a pessoa informar, baixar as fingerprint_characteristics daquela posição. se não informar (valor -1), baixar as fingerprint_characteristics da digital que a pessoa colocar no leitor.
-
-cada porta terá um identificador. mas como a porta saberá seu identificador? a princípio, toda porta teria um publisher que solicitaria à central, que devolveria seu identificador.
-
-no momento as senhas não são criptografadas
-
-funcao FingerPrintField, método clean, retornar fingerprint_characteristics compactada

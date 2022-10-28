@@ -114,7 +114,7 @@ class Permissao(models.Model):
 class Acesso(models.Model):
     usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
     porta = models.ForeignKey(Porta, on_delete=models.CASCADE)
-    horario = models.DateTimeField()
+    horario = models.DateTimeField(auto_now_add=True)
     biometria_ou_senha = models.BooleanField(default=True)
 
     def __str__(self):
